@@ -1,0 +1,108 @@
+.nav {
+    width: 100%;
+    min-height: 55px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 25px;
+}
+
+.contentSearch {
+    max-width: 250px;
+    width: 100%;
+    min-height: 34px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    color: silver;
+    transition: all .3s ease 0s;
+}
+
+.contentSearch:focus {
+    border: solid 1px silver;
+}
+
+.btn {
+    padding: 10px 25px 10px 25px;
+    min-height: 34px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.weather-display {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100px;
+    max-width: 1440px;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding-inline: 120px;
+    flex-direction: column;
+}
+
+.block {
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.content-old {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    border-bottom: solid 1px black;
+}
+.content-old button{
+    border: none;
+    background: unset;
+    cursor: pointer;
+}
+
+@media screen and (max-width:968px) {
+    .content {
+        flex-wrap: wrap;
+        padding-inline: 25px;
+    }
+
+    .weather-display {
+        min-height: 250px;
+    }
+
+    .block {
+        max-width: unset;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-footer{
+        flex-wrap: wrap;
+        gap: 15px 20px;
+    }
+    .container{
+        padding-inline: 10px;
+    }
+    .btn{
+        max-width: 120px;
+        width: 100%;
+    }
+}
